@@ -19,7 +19,7 @@
             android:id="@+id/txt_font_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="اندازه فونت:" />
+            android:text="@string/fontsize" />
 
         <RadioGroup
             android:id="@+id/font_radio_group"
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="نمایش و عدم نمایش:"
+            android:text="@string/show_hide"
             android:layout_gravity="center"/>
         <CheckBox
             android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
             android:id="@+id/txt_perv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="قبلی"
+            android:text="@string/perv"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -129,7 +129,7 @@
             android:id="@+id/txt_next"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="بعدی"
+            android:text="@string/last"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -167,7 +167,7 @@
             android:id="@+id/txt_last"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="آخر"
+            android:text="@string/changebackground"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -196,17 +196,17 @@
                 android:id="@+id/radio_Btn_Green"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="سبز" />
+                android:text="@string/back_green" />
             <RadioButton
                 android:id="@+id/radio_Btn_Blue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="آبی" />
+                android:text="@string/bach_blue" />
             <RadioButton
                 android:id="@+id/radio_Btn_Red"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="قرمز" />
+                android:text="@string/back_red" />
         </RadioGroup>
 
 
@@ -225,14 +225,14 @@
             android:id="@+id/btn_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ذخیره"
+            android:text="@string/save"
             />
 
         <Button
             android:id="@+id/btn_discare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="لغو" />
+            android:text="@string/cancle" />
     </LinearLayout>
 
 

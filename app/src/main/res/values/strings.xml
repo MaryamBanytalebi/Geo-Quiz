@@ -24,4 +24,14 @@
     <string name="radio_btn_medium">medium</string>
     <string name="radio_btn_large">large</string>
     <string name="txt_true">درست :</string>
+    <string name="fontsize">اندازه فونت:</string>
+    <string name="show_hide">نمایش و عدم نمایش:</string>
+    <string name="perv">قبلی</string>
+    <string name="last">بعدی</string>
+    <string name="changebackground">آخر</string>
+    <string name="back_green">سبز</string>
+    <string name="bach_blue">آبی</string>
+    <string name="back_red">قرمز</string>
+    <string name="cancle">لغو</string>
+    <string name="save">ذخیره</string>
 </resources>
