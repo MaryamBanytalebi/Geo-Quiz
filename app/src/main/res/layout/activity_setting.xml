@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".controller.SettingActivity">
@@ -14,6 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_font_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اندازه فونت:" />
 
         <RadioGroup
             android:id="@+id/font_radio_group"
@@ -53,23 +59,11 @@
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
-        <!--<RadioGroup
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radioButton_show_false"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_btn_show" />
-
-            <RadioButton
-                android:id="@+id/radioButton_hide_false"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_btn_hide" />
-        </RadioGroup>-->
+            android:text="نمایش و عدم نمایش:"
+            android:layout_gravity="center"/>
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
