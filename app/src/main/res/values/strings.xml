@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Geo_Quiz</string>
+    <string name="question_tehran">تهران پایتخت ایران است </string>
+    <string name="btn_next">بعدی</string>
+    <string name="btn_true_text">درست</string>
+    <string name="btn_false_text">نادرست</string>
+    <string name="tost_true_text">پاسخ شما صحیح است</string>
+    <string name="tost_false_text">پاسخ شما غلط است</string>
+    <string name="question_oceans">اقیانوس آرام بزرگترین اقیانوس جهان است</string>
+    <string name="question_middle_east">همه ی کشورهای خاور میانه عرب زبان هستند</string>
+    <string name="question_australia">استرالیا بزرگترین قاره ی جهان است </string>
+    <string name="question_egypt">مصردر قاره ی آفریقا است</string>
+    <string name="question_america">آمریکا پرجمعیت ترین کشور دنیا است</string>
+    <string name="question_asia">قاره ی آسیا در نیمکره ی جنوبی جهان است</string>
+    <string name="score_text"> : امتیاز شما</string>
+    <string name="game_over">بازی تمام شد </string>
+    <string name="txt_warning">آیا برای تقلب اطمینان داری؟</string>
+    <string name="btn_show_answer">نمایش تقلب</string>
+    <string name="toast_judgment">تقلب کار خوبی نیست</string>
+    <string name="setting_btn">تنظیمات</string>
+    <string name="radio_btn_show">نمایش</string>
+    <string name="radio_btn_hide">عدم نمایش</string>
+    <string name="radio_btn_small">small</string>
+    <string name="radio_btn_medium">medium</string>
+    <string name="radio_btn_large">large</string>
+    <string name="txt_true">درست :</string>
+</resources>
