@@ -2,6 +2,8 @@ package com.example.geo_quiz_test.controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,42 +27,56 @@ public class CheatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cheat);
-        findViews();
 
-        if (savedInstanceState != null) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        //check if fragment exists in container (configuration changes save the fragments)
+        Fragment fragment = fragmentManager.findFragmentById(R.id.fragment_container);
+
+        //create an add fragment transaction for CrimeDetailFragment
+        if (fragment == null) {
+            CheatFragment  cheatFragment = new CheatFragment();
+            fragmentManager
+                    .beginTransaction()
+                    .add(R.id.fragment_container, cheatFragment)
+                    .commit();
+
+        //findViews();
+
+        /*if (savedInstanceState != null) {
             Log.d(TAG, "saveInstanceState: " + savedInstanceState);
             mIsClick = savedInstanceState.getBoolean(BUNDLE_KEY_ANSWER, false);
             mTxtAnswer.setText(mIsClick ? R.string.btn_true_text : R.string.btn_false_text);
-        }
+        }*/
 
 
-        setListeners();
+        //setListeners();
 
-        mIsAnswerTrue = getIntent().getBooleanExtra(QuizActivity.EXTRA_ANSWER, false);
+        //mIsAnswerTrue = getIntent().getBooleanExtra(QuizActivity.EXTRA_ANSWER, false);
     }
 
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
+    //@Override
+    /*protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "saveInsatanceState: " + mIsClick);
         outState.putBoolean(BUNDLE_KEY_ANSWER, mIsClick);
+    }*/
+
+//    private void setListeners() {
+//        mBtnShowAnswer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mIsAnswerTrue)
+//                    mTxtAnswer.setText(R.string.btn_true_text);
+//                else
+//                    mTxtAnswer.setText(R.string.btn_false_text);
+//                mIsClick = true;
+//                setShownAnswerResult(true);
+//            }
+//        });
     }
 
-    private void setListeners() {
-        mBtnShowAnswer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mIsAnswerTrue)
-                    mTxtAnswer.setText(R.string.btn_true_text);
-                else
-                    mTxtAnswer.setText(R.string.btn_false_text);
-                mIsClick = true;
-                setShownAnswerResult(true);
-            }
-        });
-    }
-
-    private void setShownAnswerResult(boolean isCheat) {
+   /* private void setShownAnswerResult(boolean isCheat) {
         Intent intent = new Intent();
         intent.putExtra(EXTRA_IS_CHEAT, isCheat);
         setResult(RESULT_OK, intent);
@@ -69,5 +85,5 @@ public class CheatActivity extends AppCompatActivity {
     private void findViews() {
         mTxtAnswer = findViewById(R.id.txtview_answer);
         mBtnShowAnswer = findViewById(R.id.btn_show_answer);
-    }
+    }*/
 }
